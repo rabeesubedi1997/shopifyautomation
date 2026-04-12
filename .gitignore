@@ -9,11 +9,6 @@ dist/
 build/
 *.tsbuildinfo
 
-# Test outputs
-reports/
-test-results/
-playwright-report/
-*.trace
 
 # Environment variables
 .env
@@ -45,6 +40,4 @@ coverage/
 tmp/
 temp/
 
-# Screenshots and videos (if not in reports)
-screenshots/
-videos/
+

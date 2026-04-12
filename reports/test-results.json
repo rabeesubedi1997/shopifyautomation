@@ -1,0 +1,595 @@
+{
+  "config": {
+    "configFile": "D:\\laragon\\www\\OzCampingAutomation\\playwright.config.ts",
+    "rootDir": "D:/laragon/www/OzCampingAutomation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/laragon/www/OzCampingAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/laragon/www/OzCampingAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/laragon/www/OzCampingAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/laragon/www/OzCampingAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/laragon/www/OzCampingAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/laragon/www/OzCampingAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/laragon/www/OzCampingAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "D:/laragon/www/OzCampingAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/laragon/www/OzCampingAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "D:/laragon/www/OzCampingAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/html"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "smoke\\add-to-cart-checkout.spec.ts",
+      "file": "smoke/add-to-cart-checkout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add to Cart - Checkout Flow",
+          "file": "smoke/add-to-cart-checkout.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should demonstrate complete cart page functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 76108,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== COMPLETE CART PAGE FUNCTIONALITY TEST ===\n"
+                        },
+                        {
+                          "text": "Step 1: Adding product to cart\n"
+                        },
+                        {
+                          "text": "Selected product: CLASSIC Terry Toweling Bucket Hat by OUTBOUND\n"
+                        },
+                        {
+                          "text": "Selected size: S\n"
+                        },
+                        {
+                          "text": "Selected color: White\n"
+                        },
+                        {
+                          "text": "Step 2: Navigating to cart page\n"
+                        },
+                        {
+                          "text": "Step 3: Verifying cart page and testing quantity\n"
+                        },
+                        {
+                          "text": "Is on cart page: true\n"
+                        },
+                        {
+                          "text": "Items in cart: 1\n"
+                        },
+                        {
+                          "text": "Initial quantity: 1, Total: Cart Total Rs2,000.00\n\n\n\t\n\t\t\n\n        \n        \n            :root {\n                --body-text-font: 'Sharp Grotesk';\n                --header-text-font: 'Sharp Grotesk 25';\n                --font-weight-light: 300;\n                --font-weight-normal: 400;\n                --font-weight-medium: 500;\n                --font-weight-semibold: 600;\n            }\n\n\t\t\t.zip-container {\n\t\t\t\tmargin: 0 auto;\n\t\t\t\talign-items: center;\n\t\t\t\tline-height: 1.5;\n\t\t\t}\n\n\t\t\t.zip-container .zip-logo {\n\t\t\t\theight: 27.7px;\n\t\t\t\tvertical-align: middle;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tmargin: -2px 0 5px 0px;\n\t\t\t}\n\n\t\t\t.zip-container span {\n\t\t\t\tfont-size: 16px;\n\t\t\t\tmargin-top: 2px;\n\t\t\t\tmargin-bottom: 0px;\n\t\t\t\tdisplay: inline;\n\t\t\t}\n\n\t\t\t.zip-payment-amount {\n\t\t\t\tfont-weight: 700;\n\t\t\t}\n\n\t\t\t#zip-info-link {\n\t\t\t\tline-height: normal;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tpadding: 0;\n\t\t\t\tmargin: 0;\n\t\t\t\tborder: none;\n\t\t\t\tcolor: inherit;\n\t\t\t\ttext-decoration: none;\n\t\t\t\tbackground: transparent;\n\t\t\t\tfont-family: sans-serif;\n\t\t\t\tcursor: pointer;\n\t\t\t\ttext-align: center;\n\t\t\t\ttransition: background 250ms ease-in-out, transform 150ms ease;\n\t\t\t\t-webkit-appearance: none;\n\t\t\t\t-moz-appearance: none;\n\t\t\t}\n\n\t\t\t.zip-learn-more {\n\t\t\t\tpadding-left: 1px;\n\t\t\t\tfont-size: smaller !important;\n\t\t\t\tfont-family: sans-serif;\n\t\t\t\tcursor: pointer;\n\t\t\t}\n\t\t\n\n\n\t\n\n\n\t\n\t\t\n\t\t\tor up to 3 months interest free. Fees apply.\n\t\t\t\n\t\t\tⓘ\n"
+                        },
+                        {
+                          "text": "After increase: Quantity: 2, Total: Cart Total Rs4,000.00\n\n\n\t\n\t\t\n\n        \n        \n            :root {\n                --body-text-font: 'Sharp Grotesk';\n                --header-text-font: 'Sharp Grotesk 25';\n                --font-weight-light: 300;\n                --font-weight-normal: 400;\n                --font-weight-medium: 500;\n                --font-weight-semibold: 600;\n            }\n\n\t\t\t.zip-container {\n\t\t\t\tmargin: 0 auto;\n\t\t\t\talign-items: center;\n\t\t\t\tline-height: 1.5;\n\t\t\t}\n\n\t\t\t.zip-container .zip-logo {\n\t\t\t\theight: 27.7px;\n\t\t\t\tvertical-align: middle;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tmargin: -2px 0 5px 0px;\n\t\t\t}\n\n\t\t\t.zip-container span {\n\t\t\t\tfont-size: 16px;\n\t\t\t\tmargin-top: 2px;\n\t\t\t\tmargin-bottom: 0px;\n\t\t\t\tdisplay: inline;\n\t\t\t}\n\n\t\t\t.zip-payment-amount {\n\t\t\t\tfont-weight: 700;\n\t\t\t}\n\n\t\t\t#zip-info-link {\n\t\t\t\tline-height: normal;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tpadding: 0;\n\t\t\t\tmargin: 0;\n\t\t\t\tborder: none;\n\t\t\t\tcolor: inherit;\n\t\t\t\ttext-decoration: none;\n\t\t\t\tbackground: transparent;\n\t\t\t\tfont-family: sans-serif;\n\t\t\t\tcursor: pointer;\n\t\t\t\ttext-align: center;\n\t\t\t\ttransition: background 250ms ease-in-out, transform 150ms ease;\n\t\t\t\t-webkit-appearance: none;\n\t\t\t\t-moz-appearance: none;\n\t\t\t}\n\n\t\t\t.zip-learn-more {\n\t\t\t\tpadding-left: 1px;\n\t\t\t\tfont-size: smaller !important;\n\t\t\t\tfont-family: sans-serif;\n\t\t\t\tcursor: pointer;\n\t\t\t}\n\t\t\n\n\n\t\n\n\n\t\n\t\t\n\t\t\tor up to 3 months interest free. Fees apply.\n\t\t\t\n\t\t\tⓘ\n"
+                        },
+                        {
+                          "text": "After decrease: Quantity: 1, Total: Cart Total Rs2,000.00\n\n\n\t\n\t\t\n\n        \n        \n            :root {\n                --body-text-font: 'Sharp Grotesk';\n                --header-text-font: 'Sharp Grotesk 25';\n                --font-weight-light: 300;\n                --font-weight-normal: 400;\n                --font-weight-medium: 500;\n                --font-weight-semibold: 600;\n            }\n\n\t\t\t.zip-container {\n\t\t\t\tmargin: 0 auto;\n\t\t\t\talign-items: center;\n\t\t\t\tline-height: 1.5;\n\t\t\t}\n\n\t\t\t.zip-container .zip-logo {\n\t\t\t\theight: 27.7px;\n\t\t\t\tvertical-align: middle;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tmargin: -2px 0 5px 0px;\n\t\t\t}\n\n\t\t\t.zip-container span {\n\t\t\t\tfont-size: 16px;\n\t\t\t\tmargin-top: 2px;\n\t\t\t\tmargin-bottom: 0px;\n\t\t\t\tdisplay: inline;\n\t\t\t}\n\n\t\t\t.zip-payment-amount {\n\t\t\t\tfont-weight: 700;\n\t\t\t}\n\n\t\t\t#zip-info-link {\n\t\t\t\tline-height: normal;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tpadding: 0;\n\t\t\t\tmargin: 0;\n\t\t\t\tborder: none;\n\t\t\t\tcolor: inherit;\n\t\t\t\ttext-decoration: none;\n\t\t\t\tbackground: transparent;\n\t\t\t\tfont-family: sans-serif;\n\t\t\t\tcursor: pointer;\n\t\t\t\ttext-align: center;\n\t\t\t\ttransition: background 250ms ease-in-out, transform 150ms ease;\n\t\t\t\t-webkit-appearance: none;\n\t\t\t\t-moz-appearance: none;\n\t\t\t}\n\n\t\t\t.zip-learn-more {\n\t\t\t\tpadding-left: 1px;\n\t\t\t\tfont-size: smaller !important;\n\t\t\t\tfont-family: sans-serif;\n\t\t\t\tcursor: pointer;\n\t\t\t}\n\t\t\n\n\n\t\n\n\n\t\n\t\t\n\t\t\tor up to 3 months interest free. Fees apply.\n\t\t\t\n\t\t\tⓘ\n"
+                        },
+                        {
+                          "text": "Step 4: Testing cart page buttons visibility\n"
+                        },
+                        {
+                          "text": "Continue shopping button visible: true\n"
+                        },
+                        {
+                          "text": "Clear cart button visible: true\n"
+                        },
+                        {
+                          "text": "Checkout button visible: true\n"
+                        },
+                        {
+                          "text": "Step 5: Testing quantity buttons visibility\n"
+                        },
+                        {
+                          "text": "Quantity up button visible: true\n"
+                        },
+                        {
+                          "text": "Quantity down button visible: true\n"
+                        },
+                        {
+                          "text": "Remove button visible: true\n"
+                        },
+                        {
+                          "text": "Step 6: Testing checkout button functionality and complete checkout flow\n"
+                        },
+                        {
+                          "text": "URL after checkout: https://ozcampingwarehouse.com/checkouts/cn/hWNAvm5oYKepjfDXSxKsVnyG/en-np?_r=AQABoyp-e-_BXiLg5yRVEDUbS0dgi-Sjb8-ddXoW6QnQ&auto_redirect=false&edge_redirect=true&skip_shop_pay=true\n"
+                        },
+                        {
+                          "text": "Successfully navigated to checkout: true\n"
+                        },
+                        {
+                          "text": "Step 7: Testing checkout form fields\n"
+                        },
+                        {
+                          "text": "Is on checkout page: true\n"
+                        },
+                        {
+                          "text": "Checkout page title: Checkout - OzCampingWarehouse\n"
+                        },
+                        {
+                          "text": "=== DEBUGGING CHECKOUT FORM FIELDS ===\n"
+                        },
+                        {
+                          "text": "Total input elements found: 28\n"
+                        },
+                        {
+                          "text": "Total select elements found: 1\n"
+                        },
+                        {
+                          "text": "Input 0: name=\"email\", type=\"email\", placeholder=\"Email\", id=\"email\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 1: name=\"marketing_opt_in\", type=\"checkbox\", placeholder=\"null\", id=\"marketing_opt_in\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 2: name=\"firstName\", type=\"text\", placeholder=\"First name (optional)\", id=\"TextField843\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 3: name=\"lastName\", type=\"text\", placeholder=\"Last name\", id=\"TextField844\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 4: name=\"company\", type=\"text\", placeholder=\"Company (optional)\", id=\"TextField845\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 5: name=\"address1\", type=\"text\", placeholder=\"Address\", id=\"TextField846\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 6: name=\"address2\", type=\"text\", placeholder=\"Apartment, suite, etc. (optional)\", id=\"TextField847\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 7: name=\"city\", type=\"text\", placeholder=\"City\", id=\"TextField848\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 8: name=\"postalCode\", type=\"text\", placeholder=\"Postal code (optional)\", id=\"TextField849\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 9: name=\"phone\", type=\"tel\", placeholder=\"Phone\", id=\"TextField850\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 10: name=\"firstName\", type=\"text\", placeholder=\"null\", id=\"autofill_firstName\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 11: name=\"lastName\", type=\"text\", placeholder=\"null\", id=\"autofill_lastName\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 12: name=\"company\", type=\"text\", placeholder=\"null\", id=\"autofill_company\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 13: name=\"address1\", type=\"text\", placeholder=\"null\", id=\"autofill_address1\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 14: name=\"address2\", type=\"text\", placeholder=\"null\", id=\"autofill_address2\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 15: name=\"city\", type=\"text\", placeholder=\"null\", id=\"autofill_city\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 16: name=\"country\", type=\"text\", placeholder=\"null\", id=\"autofill_country\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 17: name=\"zone\", type=\"text\", placeholder=\"null\", id=\"autofill_zone\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 18: name=\"address-level1\", type=\"text\", placeholder=\"null\", id=\"autofill_address_level1\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 19: name=\"province\", type=\"text\", placeholder=\"null\", id=\"autofill_province\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 20: name=\"postalCode\", type=\"text\", placeholder=\"null\", id=\"autofill_postalCode\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 21: name=\"phone\", type=\"text\", placeholder=\"null\", id=\"autofill_phone\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 22: name=\"basic\", type=\"radio\", placeholder=\"null\", id=\"basic-creditCards\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 23: name=\"billingAddress\", type=\"checkbox\", placeholder=\"null\", id=\"billingAddressCheckbox\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 24: name=\"basic\", type=\"radio\", placeholder=\"null\", id=\"basic-Zip - Flexible payment options\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 25: name=\"basic\", type=\"radio\", placeholder=\"null\", id=\"basic-Afterpay\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 26: name=\"phone\", type=\"tel\", placeholder=\"Mobile phone (optional)\", id=\"TextField8\", visible=true\n"
+                        },
+                        {
+                          "text": "Input 27: name=\"reductions\", type=\"text\", placeholder=\"Gift card\", id=\"ReductionsInput158\", visible=true\n"
+                        },
+                        {
+                          "text": "Select 0: name=\"countryCode\", id=\"Select188\", visible=true\n"
+                        },
+                        {
+                          "text": "=== SELECTOR RESULTS ===\n"
+                        },
+                        {
+                          "text": "Email visible: true\n"
+                        },
+                        {
+                          "text": "First name visible: false\n"
+                        },
+                        {
+                          "text": "Last name visible: false\n"
+                        },
+                        {
+                          "text": "Address visible: false\n"
+                        },
+                        {
+                          "text": "City visible: false\n"
+                        },
+                        {
+                          "text": "ZIP visible: false\n"
+                        },
+                        {
+                          "text": "Phone visible: false\n"
+                        },
+                        {
+                          "text": "Country visible: true\n"
+                        },
+                        {
+                          "text": "State visible: false\n"
+                        },
+                        {
+                          "text": "Checkout form fields visibility:\n"
+                        },
+                        {
+                          "text": "  Email field visible: true\n"
+                        },
+                        {
+                          "text": "  First name field visible: false\n"
+                        },
+                        {
+                          "text": "  Last name field visible: false\n"
+                        },
+                        {
+                          "text": "  Address field visible: false\n"
+                        },
+                        {
+                          "text": "  City field visible: false\n"
+                        },
+                        {
+                          "text": "  ZIP field visible: false\n"
+                        },
+                        {
+                          "text": "  Phone field visible: false\n"
+                        },
+                        {
+                          "text": "  Country field visible: true\n"
+                        },
+                        {
+                          "text": "  State field visible: false\n"
+                        },
+                        {
+                          "text": "Step 8: Filling checkout form\n"
+                        },
+                        {
+                          "text": "Filling checkout form...\n"
+                        },
+                        {
+                          "text": "Attempt 1: 28 total inputs, 1 selects\n"
+                        },
+                        {
+                          "text": "Specific fields: email=1, names=0, address=5, city=2, zip=2, phone=3, country=1\n"
+                        },
+                        {
+                          "text": "Form fields found on attempt 1\n"
+                        },
+                        {
+                          "text": "Email filled\n"
+                        },
+                        {
+                          "text": "First name field not visible, skipping\n"
+                        },
+                        {
+                          "text": "Last name field not visible, skipping\n"
+                        },
+                        {
+                          "text": "Address field not visible, skipping\n"
+                        },
+                        {
+                          "text": "City field not visible, skipping\n"
+                        },
+                        {
+                          "text": "ZIP field not visible, skipping\n"
+                        },
+                        {
+                          "text": "Phone field not visible, skipping\n"
+                        },
+                        {
+                          "text": "Country selected\n"
+                        },
+                        {
+                          "text": "State field not visible, skipping\n"
+                        },
+                        {
+                          "text": "Checkout form filled successfully\n"
+                        },
+                        {
+                          "text": "Checkout form filled successfully\n"
+                        },
+                        {
+                          "text": "Step 9: Selecting payment method\n"
+                        },
+                        {
+                          "text": "Selecting payment method...\n"
+                        },
+                        {
+                          "text": "Payment button clicked\n"
+                        },
+                        {
+                          "text": "Payment method selected\n"
+                        },
+                        {
+                          "text": "Step 10: Checking credit card fields and filling details\n"
+                        },
+                        {
+                          "text": "Credit card fields visibility:\n"
+                        },
+                        {
+                          "text": "  Card number field visible: true\n"
+                        },
+                        {
+                          "text": "  Card holder name field visible: false\n"
+                        },
+                        {
+                          "text": "  Expiry field visible: false\n"
+                        },
+                        {
+                          "text": "  CVV field visible: false\n"
+                        },
+                        {
+                          "text": "  Month select visible: false\n"
+                        },
+                        {
+                          "text": "  Year select visible: false\n"
+                        },
+                        {
+                          "text": "Filling credit card details...\n"
+                        },
+                        {
+                          "text": "Filling credit card details in Shopify iframes\n"
+                        },
+                        {
+                          "text": "Card number filled\n"
+                        },
+                        {
+                          "text": "Card holder name filled\n"
+                        },
+                        {
+                          "text": "Expiry date filled\n"
+                        },
+                        {
+                          "text": "CVV filled\n"
+                        },
+                        {
+                          "text": "Credit card details filled successfully\n"
+                        },
+                        {
+                          "text": "Credit card details filled successfully\n"
+                        },
+                        {
+                          "text": "Step 11: Submitting order\n"
+                        },
+                        {
+                          "text": "Submitting order...\n"
+                        },
+                        {
+                          "text": "Order submitted using: #checkout-pay-button\n"
+                        },
+                        {
+                          "text": "Final URL after order submission: https://ozcampingwarehouse.com/checkouts/cn/hWNAvm5oYKepjfDXSxKsVnyG/en-np?_r=AQABoyp-e-_BXiLg5yRVEDUbS0dgi-Sjb8-ddXoW6QnQ&auto_redirect=false&edge_redirect=true&skip_shop_pay=true\n"
+                        },
+                        {
+                          "text": "Order submitted successfully: false\n"
+                        },
+                        {
+                          "text": "=== COMPLETE CHECKOUT FLOW TEST COMPLETED SUCCESSFULLY ===\n"
+                        },
+                        {
+                          "text": "All cart and checkout features verified:\n"
+                        },
+                        {
+                          "text": "  - Continue shopping button: VISIBLE and functional\n"
+                        },
+                        {
+                          "text": "  - Clear cart button: VISIBLE\n"
+                        },
+                        {
+                          "text": "  - Checkout button: VISIBLE and functional\n"
+                        },
+                        {
+                          "text": "  - Quantity up button: VISIBLE and functional\n"
+                        },
+                        {
+                          "text": "  - Quantity down button: VISIBLE and functional\n"
+                        },
+                        {
+                          "text": "  - Remove button: VISIBLE\n"
+                        },
+                        {
+                          "text": "  - Cart page navigation: WORKING\n"
+                        },
+                        {
+                          "text": "  - Quantity management: WORKING with correct price updates\n"
+                        },
+                        {
+                          "text": "  - Checkout page navigation: WORKING\n"
+                        },
+                        {
+                          "text": "  - Checkout form fields: VISIBLE and accessible\n"
+                        },
+                        {
+                          "text": "  - Checkout form filling: WORKING\n"
+                        },
+                        {
+                          "text": "  - Payment method selection: WORKING\n"
+                        },
+                        {
+                          "text": "  - Order submission: TESTED\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-12T07:50:51.712Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed54ee10517ce91d536f-0669aa8a624d466dd9a7",
+              "file": "smoke/add-to-cart-checkout.spec.ts",
+              "line": 5,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-12T07:50:51.089Z",
+    "duration": 76983.43000000001,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
